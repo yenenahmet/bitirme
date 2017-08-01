@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ahmet.erasmusapp.LoginAct"
+    tools:showIn="@layout/activity_login"
+    android:background="#e30cda">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="fitXY"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:background="@drawable/edittext_theme"
+        android:layout_above="@+id/editText6"
+        android:textSize="22dp"
+        android:textColor="#f4eded"
+        android:padding="9dp"
+        android:hint="Email"
+        android:gravity="left"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColorHint="#f4eded"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edittext_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@+id/button2"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:padding="9dp"
+        android:hint="Password"
+        android:gravity="left"
+        android:layout_marginBottom="50dp"
+        android:textColorHint="#f9f6f6" />
+
+    <Button
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş yap"
+        android:id="@+id/button2"
+        android:textSize="22dp"
+        android:layout_above="@+id/Kayıtol"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_theme"
+        android:textColor="#e0e0e0"
+        android:padding="9dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Kayitli değil misin?  Kayıt OL"
+    android:textColor="@android:color/white"
+    android:layout_marginBottom="135dp"
+    android:id="@+id/Kayıtol"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    />
+    </RelativeLayout>
+
+</RelativeLayout>

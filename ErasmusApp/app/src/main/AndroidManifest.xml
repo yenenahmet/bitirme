@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmet.erasmusapp">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".KayitAct"
+            android:label="@string/title_activity_kayit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TabbedActivity" />
+        <activity
+            android:name=".ArkadasListesi"
+            android:label="Arkadaşlar"
+            android:theme="@style/AppTheme.MyActionbar"  />
+        <activity
+            android:name=".GorevAdimlari"
+            android:label="@string/title_activity_gorev_adimlari"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <activity
+            android:name=".GoreviBitirenlerListesi"
+            android:label="GöreviBitirenler"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <activity
+            android:name=".ArkadaslikistekleriGoster"
+            android:label="Arkadaşlık İstekleri"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <activity
+            android:name=".BaskaProfileGec"
+            android:label="Arkadaş Profil"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <activity
+            android:name=".GorevtamamlamabegeniyorumYorumaGec"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".MyFirebaseCloud">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [START firebase_service] -->
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+
+        <activity
+            android:name=".BegenenListesiGor"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <activity android:name=".KisiselProfilDuzenleme" />
+        <activity
+            android:name=".MesajKutusu"
+            android:theme="@style/AppTheme.MyActionbar" />
+        <activity
+            android:name=".OzelMesaj"
+            android:theme="@style/AppTheme.MyActionbar" />
+
+        <service
+            android:name=".Socket_Servis.Cevrimici_Kontrol_Servis_Socket"
+            android:exported="true" />
+
+        <activity android:name=".izinler"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

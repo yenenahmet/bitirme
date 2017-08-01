@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/image_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_profil_Yorum" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/Kullanici_adi_yorum"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="a"
+            />
+
+        <TextView
+            android:id="@+id/yorum_Yorumlargetir"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_width="wrap_content"
+            android:text="asd"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="as"
+        android:id="@+id/txt_zaman_yorum"
+        android:paddingTop="5dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>

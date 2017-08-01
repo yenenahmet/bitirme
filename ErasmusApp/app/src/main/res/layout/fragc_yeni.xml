@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/refreshFragc"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ArklistFragC"
+            android:divider="@null"
+            android:layout_above="@+id/L1"
+            />
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:text="Arkadaşlık istekleri"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnArkistekleri"
+                android:background="#b990c4"
+
+                />
+            <Button
+
+                android:layout_marginLeft="0dp"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:background="#a076ab"
+                android:id="@+id/button8"
+                android:textColor="@android:color/white"
+
+                android:text="Mesaj KUTUSU"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

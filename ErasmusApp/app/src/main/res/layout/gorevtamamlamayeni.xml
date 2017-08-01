@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/profil"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="20dp"
+        />
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text "
+            android:paddingRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soote Cafe # Restaurany"
+            android:layout_marginLeft="10dp"
+            android:textColor="#F50057"
+            android:id="@+id/textView13"
+           android:paddingRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Görev 1"
+            android:id="@+id/textView12"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/likek"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/textView14"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yorum1"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/textView15"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/like48"
+    android:id="@+id/btnBegeniYolla"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="25dp"
+    />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/likegeri48"
+            android:id="@+id/btnbegeniGerial"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            />
+    <TextView
+        android:layout_below="@+id/btnbegeniGerial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1G"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+
+        />
+    </RelativeLayout>
+</LinearLayout>

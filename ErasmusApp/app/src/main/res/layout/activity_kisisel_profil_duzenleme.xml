@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.ahmet.erasmusapp.KisiselProfilDuzenleme">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#ba78fe"
+    android:id="@+id/RKPD"
+    >
+    
+    <ImageView
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+    android:src="@android:drawable/ic_menu_close_clear_cancel"
+    android:id="@+id/cikis"
+    />
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/tickprofil"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/onayıyolla"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:textSize="18dp"
+        android:text="PROFİL DÜZENLE"
+        android:textColor="@android:color/white"
+        android:id="@+id/tw1"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tw1"
+    >
+    <ImageView
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:id="@+id/profilfotosu"
+        />
+</RelativeLayout>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/RKPD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+          android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:ems="10"
+            android:id="@+id/kullanıcıadiyolla"
+
+            />
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@android:drawable/sym_action_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:ems="10"
+            android:id="@+id/kullanıcıemailyolla" />
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Sifre"
+            android:ems="10"
+
+            android:id="@+id/kullanıcısifreyolla" />
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="Profil Yazısı"
+            android:ems="10"
+            android:id="@+id/kullanıcıprofilyazısıyolla" />
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

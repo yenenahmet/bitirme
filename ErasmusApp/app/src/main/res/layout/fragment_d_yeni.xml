@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="#ba78ff"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/button7"
+            android:src="@drawable/arksayfasi"
+            android:scaleType="fitXY"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:id="@+id/profilidüzenlegec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+
+            android:paddingRight="55dp"
+            />
+        <ImageView
+            android:id="@+id/cikisyap_kullaniciprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+
+            android:paddingRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFİL"
+            android:textSize="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Ahmet YENEN"
+        android:id="@+id/textView7"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/textView8"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Sakarya Üniversitesi, bilgisayar mühendisliği  %% İstabul, Ankara"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#3b364a"
+        >
+        <ProgressBar
+            android:id="@+id/circularProgressBar"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:indeterminate="false"
+        android:max="40"
+        android:progress="5"
+        android:progressDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:id="@+id/progsesbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="progress"
+        android:textColor="@android:color/white"
+
+            />
+        <TextView
+            android:layout_below="@+id/progsesbarText"
+            android:id="@+id/progsesbarTextalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Tamamlanan Adımlar"
+            android:textSize="9dp"
+            android:textColor="@android:color/white"
+
+            />
+    </RelativeLayout>
+</LinearLayout>

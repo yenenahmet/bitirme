@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Hakkinda"
+        android:orderInCategory="104"
+        android:title="Hakkinda" />
+
+    <item
+        android:id="@+id/Yorumlar"
+        android:orderInCategory="105"
+        android:title="Yorumlar" />
+    <item
+        android:id="@+id/Detaylar"
+        android:orderInCategory="106"
+        android:title="Detaylar" />
+</menu>

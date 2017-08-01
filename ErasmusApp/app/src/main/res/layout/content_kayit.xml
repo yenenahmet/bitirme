@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ahmet.erasmusapp.KayitAct"
+    tools:showIn="@layout/activity_kayit"
+    android:background="#030303"
+    >
+
+
+    <ImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/KayitResimDefault"
+        android:layout_above="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/kayirkamera"
+        android:scaleType="fitXY"
+        />
+    <EditText
+        android:background="#212020"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="50dp"
+        android:hint="Kullanıcı Adı"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:drawableRight="@android:drawable/ic_menu_myplaces"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText
+        android:background="#212020"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editText3"
+        android:drawableRight="@android:drawable/sym_action_email"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+      android:hint="Email"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_above="@+id/editText4"
+        />
+
+
+
+    <EditText
+        android:background="#302d2d"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Şifre"
+        android:drawableRight="@android:drawable/ic_lock_idle_lock"
+        android:id="@+id/editText4"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/editText"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kaydet"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0000"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>
